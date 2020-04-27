@@ -6,6 +6,7 @@ function HooksFoodContainer() {
     const dispatch = useDispatch()
     return (
         <div>
+            <br />***************** Food Hooks Container **********************<br />
             <h2>No of food packets : {numFoodPacket}</h2>
             <button onClick={() => { dispatch(buyFood()) }}>Buy food packet</button>
         </div>

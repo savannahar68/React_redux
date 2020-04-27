@@ -6,6 +6,7 @@ function FoodContainer(props) {
     console.log(props)
     return (
         <div>
+            <br />***************** Food Container **********************<br />
             <h2>
                 Number of Food Packet : {props.numFoodPackets}
             </h2>
