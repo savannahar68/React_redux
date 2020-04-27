@@ -3,7 +3,7 @@ import './App.css';
 import FoodContainer from './components/FoodContainer';
 import HooksFoodContainer from './components/HooksFoodContainer';
 import FoodWaterContainer from './components/FoodWaterContainer';
-
+import UserContainer from './components/UserContainer';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
 
@@ -15,6 +15,7 @@ function App() {
         <FoodContainer />
         <HooksFoodContainer />
         <FoodWaterContainer />
+        <UserContainer />
       </Provider>
     </div>
   );
