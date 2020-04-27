@@ -1,12 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import FoodContainer from './components/FoodContainer';
+import { store } from './redux/store';
+import { Provider } from 'react-redux';
 
 function App() {
+  console.log(store.getState())
   return (
     <div className="App">
-      <FoodContainer />
+      <Provider store={store}>
+        <FoodContainer />
+      </Provider>
     </div>
   );
 }
